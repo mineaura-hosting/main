@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MineAura Hosting — Premium Minecraft Server Hosting &amp; VPS</title>
+<meta name="description" content="MineAura Hosting delivers premium Minecraft server hosting and VPS infrastructure — powerful hardware, enterprise DDoS protection, Pterodactyl control panel and instant deployment. Order through our Discord." />
+<meta name="theme-color" content="#030B25" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://mineaura.gg/" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MineAura Hosting" />
+<meta property="og:title" content="MineAura Hosting — Your World. Your Rules. Our Power." />
+<meta property="og:description" content="Next-generation Minecraft hosting with powerful infrastructure, effortless server management, and a community that has your back." />
+<meta property="og:image" content="assets/img/favicon.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MineAura Hosting — Premium Minecraft Server Hosting" />
+<meta name="twitter:description" content="Powerful Minecraft hosting, enterprise DDoS protection and instant deployment. Purchases handled through Discord." />
+
+<!-- Branding: official MineAura hexagonal logo -->
+<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+<link rel="apple-touch-icon" href="assets/img/favicon.png" />
+
+<!-- Fonts: system stack only (zero network requests, instant render) -->
+<link rel="stylesheet" href="assets/css/main.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mineaura.gg/#organization",
+      "name": "MineAura Hosting",
+      "description": "Premium Minecraft server hosting and VPS infrastructure.",
+      "sameAs": ["https://discord.gg/QuMcykHhRR"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mineaura.gg/#website",
+      "url": "https://mineaura.gg/",
+      "name": "MineAura Hosting",
+      "publisher": { "@id": "https://mineaura.gg/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I purchase a server?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All orders, upgrades and sales questions are handled personally through the MineAura Discord. Join the community, tell the team which package fits your world, and they will get your server provisioned."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly will my server be deployed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Deployment runs automatically once your order is confirmed in Discord. Your panel credentials are sent as soon as provisioning finishes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support Paper and Spigot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Paper and Spigot are selectable from the control panel, so you can install your server software and plugins without touching a terminal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support modded servers with Forge and Fabric?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Forge and Fabric loaders are supported, along with the popular modpack installers available in the panel."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ======================================================================
+     ICON SPRITE (inline, no network requests)
+     ====================================================================== -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-discord" viewBox="0 0 24 24"><path fill="currentColor" d="M20.32 4.57A19.8 19.8 0 0 0 15.45 3c-.22.39-.47.92-.65 1.34a18.3 18.3 0 0 0-5.6 0C9.02 3.92 8.77 3.39 8.55 3a19.7 19.7 0 0 0-4.88 1.57C.6 9.16-.25 13.63.17 18.04a19.9 19.9 0 0 0 6.03 3.05c.48-.66.91-1.36 1.28-2.1-.71-.27-1.39-.6-2.03-.99.17-.13.34-.26.5-.4a14.2 14.2 0 0 0 12.1 0c.16.14.33.27.5.4-.64.39-1.32.72-2.03.99.37.74.8 1.44 1.28 2.1a19.85 19.85 0 0 0 6.03-3.05c.5-5.1-.84-9.54-3.51-13.47ZM8.02 15.34c-1.18 0-2.15-1.09-2.15-2.42s.95-2.42 2.15-2.42c1.2 0 2.17 1.1 2.15 2.42 0 1.33-.95 2.42-2.15 2.42Zm7.96 0c-1.18 0-2.15-1.09-2.15-2.42s.95-2.42 2.15-2.42c1.2 0 2.17 1.1 2.15 2.42 0 1.33-.95 2.42-2.15 2.42Z"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="10" y="10" width="4" height="4" rx="1"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v6c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6l-7-3Z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11l-1 8.5 9-12h-6.5L13 2Z"/></symbol>
+  <symbol id="i-panel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 9v11"/><path d="M11.5 12.5h6M11.5 16h4"/></symbol>
+  <symbol id="i-puzzle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 4a2 2 0 1 1 4 0v1h3a1 1 0 0 1 1 1v3h1a2 2 0 1 1 0 4h-1v3a1 1 0 0 1-1 1h-3v1a2 2 0 1 1-4 0v-1H7a1 1 0 0 1-1-1v-3H5a2 2 0 1 1 0-4h1V6a1 1 0 0 1 1-1h3V4Z"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5h3l2 2.5h8A2.5 2.5 0 0 1 21 10v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7.5Z"/><path d="M8 13.5h8"/></symbol>
+  <symbol id="i-archive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></symbol>
+  <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 5.3a3.2 3.2 0 0 1 0 6.2M17.5 20a5.6 5.6 0 0 0-2-4.3"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="2" fill="currentColor" stroke="none"/><circle cx="8" cy="18" r="2" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.5 12.5 5 5 10-11"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12.5 5.5 19 12l-6.5 6.5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.5-4 9c-2.6-2.5-4-5.6-4-9s1.4-6.5 4-9Z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10" rx="2"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c4-4.4 6-7.7 6-10.5A6 6 0 0 0 6 10.5C6 13.3 8 16.6 12 21Z"/><circle cx="12" cy="10.3" r="2.2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.6-4.5A8 8 0 1 1 21 12Z"/><path d="M9 12h.01M12.5 12h.01M16 12h.01"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======================================================================
+     NAVBAR
+     ====================================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-shell">
+    <a class="brand" href="#home" aria-label="MineAura Hosting — home">
+      <span class="brand-mark">
+        <img src="assets/img/favicon.png" alt="MineAura logo" width="36" height="36" data-asset="mark" />
+      </span>
+      <span class="brand-word-wrap">
+        <img class="brand-word" src="assets/img/minecraft_title.png" alt="MineAura Hosting" width="220" height="34" data-asset="wordmark" data-fallback-text="MINEAURA" />
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#minecraft-hosting" class="nav-link">Minecraft Hosting</a>
+      <a href="#vps-hosting" class="nav-link">VPS Hosting</a>
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#locations" class="nav-link">Locations</a>
+      <a href="#support" class="nav-link">Support</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="https://discord.gg/QuMcykHhRR" data-discord>
+        <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg>
+        <span>Discord</span>
+      </a>
+      <a class="btn btn-primary" href="https://discord.gg/QuMcykHhRR" data-discord>Client Area</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+      <span class="nav-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <nav aria-label="Mobile">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#minecraft-hosting" class="mobile-link">Minecraft Hosting</a>
+      <a href="#vps-hosting" class="mobile-link">VPS Hosting</a>
+      <a href="#features" class="mobile-link">Features</a>
+      <a href="#locations" class="mobile-link">Locations</a>
+      <a href="#support" class="mobile-link">Support</a>
+    </nav>
+    <div class="mobile-actions">
+      <a class="btn btn-outline btn-block" href="https://discord.gg/QuMcykHhRR" data-discord>
+        <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg><span>Join Discord</span>
+      </a>
+      <a class="btn btn-primary btn-block" href="https://discord.gg/QuMcykHhRR" data-discord>Client Area</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ====================================================================
+       HERO
+       ==================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow reveal">
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          Premium Minecraft Hosting
+        </span>
+
+        <h1 class="hero-title reveal" style="--d:.06s">
+          <span class="line">YOUR WORLD. YOUR RULES.</span>
+          <span class="line grad-text">OUR POWER.</span>
+        </h1>
+
+        <p class="hero-lede reveal" style="--d:.12s">
+          Experience next-generation Minecraft hosting with powerful infrastructure,
+          effortless server management, and a community that has your back.
+        </p>
+
+        <ul class="hero-highlights reveal" style="--d:.18s">
+          <li>
+            <span class="hl-ico"><svg aria-hidden="true"><use href="#i-cpu" /></svg></span>
+            Premium Hardware
+          </li>
+          <li>
+            <span class="hl-ico"><svg aria-hidden="true"><use href="#i-shield" /></svg></span>
+            DDoS Protection
+          </li>
+          <li>
+            <span class="hl-ico"><svg aria-hidden="true"><use href="#i-bolt" /></svg></span>
+            Instant Deployment
+          </li>
+        </ul>
+
+        <div class="hero-cta reveal" style="--d:.24s">
+          <a class="btn btn-primary btn-lg" href="#budget">
+            Explore Plans
+            <svg class="ico" aria-hidden="true"><use href="#i-arrow" /></svg>
+          </a>
+          <a class="btn btn-outline btn-lg" href="https://discord.gg/QuMcykHhRR" data-discord>
+            <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg>
+            Join Discord
+          </a>
+        </div>
+
+        <p class="hero-note reveal" style="--d:.3s">
+          <svg class="ico ico-sm" aria-hidden="true"><use href="#i-lock" /></svg>
+          Orders, upgrades and sales support are handled personally through our Discord.
+        </p>
+      </div>
+
+      <div class="hero-visual reveal" style="--d:.1s">
+        <div class="hero-visual-glow" aria-hidden="true"></div>
+        <img class="hero-island" src="assets/img/hero-island.svg" alt="A floating voxel island built in MineAura cyan, purple and pink" width="780" height="580" loading="eager" decoding="async" />
+        <div class="float-chip float-chip-a">
+          <svg aria-hidden="true"><use href="#i-shield" /></svg>
+          <span><strong>DDoS Protected</strong><small>Filtered 24/7</small></span>
+        </div>
+        <div class="float-chip float-chip-b">
+          <svg aria-hidden="true"><use href="#i-bolt" /></svg>
+          <span><strong>Instant Setup</strong><small>Ready to join</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Paper</span><span>Spigot</span><span>Forge</span><span>Fabric</span><span>Modpacks</span><span>Pterodactyl Panel</span><span>NVMe Storage</span><span>DDoS Protection</span>
+        <span>Paper</span><span>Spigot</span><span>Forge</span><span>Fabric</span><span>Modpacks</span><span>Pterodactyl Panel</span><span>NVMe Storage</span><span>DDoS Protection</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       HOSTING CATEGORIES — INTRO
+       ==================================================================== -->
+  <section class="section section-intro" id="minecraft-hosting">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal">Choose your tier</span>
+        <h2 class="section-title reveal" style="--d:.05s">HOSTING BUILT AROUND <span class="grad-text">YOUR WORLD</span></h2>
+        <p class="section-lede reveal" style="--d:.1s">
+          Three clear paths — budget worlds, advanced communities and full virtual servers.
+          Pick the tier that fits, then finish your order in Discord.
+        </p>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card reveal" href="#budget" style="--d:.06s">
+          <span class="category-tag">Tier 01</span>
+          <h3 class="category-name">Budget Plans</h3>
+          <p>Affordable Minecraft hosting for friends, communities, and small servers.</p>
+          <span class="category-link">View budget plans <svg aria-hidden="true"><use href="#i-arrow" /></svg></span>
+        </a>
+        <a class="category-card reveal" href="#advanced" style="--d:.12s">
+          <span class="category-tag">Tier 02</span>
+          <h3 class="category-name">Advanced Plans</h3>
+          <p>More power for larger communities, modpacks, and demanding Minecraft worlds.</p>
+          <span class="category-link">View advanced plans <svg aria-hidden="true"><use href="#i-arrow" /></svg></span>
+        </a>
+        <a class="category-card reveal" href="#vps-hosting" style="--d:.18s">
+          <span class="category-tag">Tier 03</span>
+          <h3 class="category-name">VPS Plans</h3>
+          <p>Powerful virtual servers for developers, game networks, and advanced workloads.</p>
+          <span class="category-link">View VPS plans <svg aria-hidden="true"><use href="#i-arrow" /></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       BUDGET PLANS
+       ==================================================================== -->
+  <section class="section plans-section" id="budget">
+    <div class="container">
+      <div class="plans-head">
+        <div class="plans-head-copy">
+          <span class="eyebrow reveal">Minecraft Hosting</span>
+          <h2 class="plans-title reveal" style="--d:.05s">
+            <img src="assets/img/minecraft_title_3.png" alt="Aura Budget Plans" data-fallback-text="AURA BUDGET PLANS" data-asset="title-3" width="420" height="70" />
+          </h2>
+          <p class="plans-desc reveal" style="--d:.1s">
+            Affordable Minecraft hosting for friends, communities, and small servers.
+          </p>
+        </div>
+        <div class="plans-head-side reveal" style="--d:.15s">
+          <span class="pill"><svg aria-hidden="true"><use href="#i-shield" /></svg> DDoS protection included</span>
+          <span class="pill"><svg aria-hidden="true"><use href="#i-bolt" /></svg> Instant deployment</span>
+        </div>
+      </div>
+
+      <div class="plan-grid" data-plans="budget" aria-label="Aura Budget Minecraft hosting plans"><noscript><p class="plans-footnote">Enable JavaScript to view the full plan table — or ask for current packages in our <a href="https://discord.gg/QuMcykHhRR" data-discord style="color:#08C9F5">Discord</a>.</p></noscript></div>
+
+      <p class="plans-footnote reveal">
+        Placeholder specifications and pricing shown for layout purposes. Final packages,
+        availability and pricing are confirmed by the MineAura team in Discord.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       ADVANCED PLANS
+       ==================================================================== -->
+  <section class="section plans-section" id="advanced">
+    <div class="plans-aura plans-aura-a" aria-hidden="true"></div>
+    <div class="container">
+      <div class="plans-head">
+        <div class="plans-head-copy">
+          <span class="eyebrow reveal">Minecraft Hosting</span>
+          <h2 class="plans-title reveal" style="--d:.05s">
+            <img src="assets/img/minecraft_title_4.png" alt="Aura Advanced Plans" data-fallback-text="AURA ADVANCED PLANS" data-asset="title-4" width="460" height="70" />
+          </h2>
+          <p class="plans-desc reveal" style="--d:.1s">
+            More power for larger communities, modpacks, and demanding Minecraft worlds.
+          </p>
+        </div>
+        <div class="plans-head-side reveal" style="--d:.15s">
+          <span class="pill"><svg aria-hidden="true"><use href="#i-cpu" /></svg> High-clock CPUs</span>
+          <span class="pill"><svg aria-hidden="true"><use href="#i-archive" /></svg> Automated backups</span>
+        </div>
+      </div>
+
+      <div class="plan-grid" data-plans="advanced" aria-label="Aura Advanced Minecraft hosting plans"><noscript><p class="plans-footnote">Enable JavaScript to view the full plan table — or ask for current packages in our <a href="https://discord.gg/QuMcykHhRR" data-discord style="color:#08C9F5">Discord</a>.</p></noscript></div>
+
+      <p class="plans-footnote reveal">
+        Placeholder specifications and pricing shown for layout purposes. Final packages,
+        availability and pricing are confirmed by the MineAura team in Discord.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       VPS PLANS
+       ==================================================================== -->
+  <section class="section plans-section plans-section-vps" id="vps-hosting">
+    <div class="plans-aura plans-aura-b" aria-hidden="true"></div>
+    <div class="container">
+      <div class="plans-head">
+        <div class="plans-head-copy">
+          <span class="eyebrow reveal">Virtual Private Servers</span>
+          <h2 class="plans-title reveal" style="--d:.05s">
+            <img src="assets/img/minecraft_title_2.png" alt="Aura VPS Plans" data-fallback-text="AURA VPS PLANS" data-asset="title-2" width="380" height="70" />
+          </h2>
+          <p class="plans-desc reveal" style="--d:.1s">
+            Powerful virtual servers for developers, game networks, and advanced workloads.
+          </p>
+        </div>
+        <div class="plans-head-side reveal" style="--d:.15s">
+          <span class="pill"><svg aria-hidden="true"><use href="#i-panel" /></svg> Root access</span>
+          <span class="pill"><svg aria-hidden="true"><use href="#i-globe" /></svg> Choice of region</span>
+        </div>
+      </div>
+
+      <div class="plan-grid" data-plans="vps" aria-label="Aura VPS plans"><noscript><p class="plans-footnote">Enable JavaScript to view the full plan table — or ask for current packages in our <a href="https://discord.gg/QuMcykHhRR" data-discord style="color:#08C9F5">Discord</a>.</p></noscript></div>
+
+      <p class="plans-footnote reveal">
+        Placeholder specifications and pricing shown for layout purposes. Final packages,
+        availability and pricing are confirmed by the MineAura team in Discord.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FEATURES
+       ==================================================================== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal">Everything included</span>
+        <h2 class="section-title reveal" style="--d:.05s">PREMIUM FEATURES, <span class="grad-text">STANDARD</span></h2>
+        <p class="section-lede reveal" style="--d:.1s">
+          Every MineAura package ships with the tools you need to launch, run and protect
+          a world your players will stay in.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-cpu" /></svg></span>
+          <h3>Powerful Hardware</h3>
+          <p>High-clock CPUs, NVMe storage and fast memory keep tick rates steady when the whole community is online.</p>
+        </article>
+        <article class="feature-card reveal" style="--d:.05s">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-shield" /></svg></span>
+          <h3>Enterprise DDoS Protection</h3>
+          <p>Always-on filtering absorbs attacks before they reach your world — no toggles, no extra fees.</p>
+        </article>
+        <article class="feature-card reveal" style="--d:.1s">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-panel" /></svg></span>
+          <h3>Pterodactyl Control Panel</h3>
+          <p>A clean, modern panel for your console, files, databases, backups and scheduled tasks.</p>
+        </article>
+        <article class="feature-card reveal" style="--d:.15s">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-bolt" /></svg></span>
+          <h3>Instant Deployment</h3>
+          <p>Confirm your package in Discord and your server is provisioned and ready to join in minutes.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-puzzle" /></svg></span>
+          <h3>Plugin and Mod Support</h3>
+          <p>Paper, Spigot, Forge and Fabric — run the plugins and modpacks your community expects.</p>
+        </article>
+        <article class="feature-card reveal" style="--d:.05s">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-folder" /></svg></span>
+          <h3>Full FTP Access</h3>
+          <p>Connect with any FTP client and manage every world, config and JAR file directly.</p>
+        </article>
+        <article class="feature-card reveal" style="--d:.1s">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-archive" /></svg></span>
+          <h3>Automated Backups</h3>
+          <p>Scheduled snapshots you can restore in a couple of clicks — before the next update, not after.</p>
+        </article>
+        <article class="feature-card reveal" style="--d:.15s">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-activity" /></svg></span>
+          <h3>Server Monitoring</h3>
+          <p>Live CPU, memory and disk graphs so you can see exactly how your server is performing.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-users" /></svg></span>
+          <h3>Community Support</h3>
+          <p>Real people in our Discord who know Minecraft hosting inside out, ready when you need them.</p>
+        </article>
+        <article class="feature-card reveal" style="--d:.05s">
+          <span class="feature-ico"><svg aria-hidden="true"><use href="#i-sliders" /></svg></span>
+          <h3>Easy Server Management</h3>
+          <p>Console, files, power controls and player tools in one place — no terminal knowledge required.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CONTROL PANEL SHOWCASE
+       ==================================================================== -->
+  <section class="section panel-section" id="panel">
+    <div class="panel-aura" aria-hidden="true"></div>
+    <div class="container">
+      <div class="panel-layout">
+        <div class="panel-copy">
+          <span class="eyebrow reveal">Pterodactyl Control Panel</span>
+          <h2 class="section-title reveal" style="--d:.05s">YOUR SERVER.<br /><span class="grad-text">COMPLETE CONTROL.</span></h2>
+          <p class="section-lede reveal" style="--d:.1s">
+            Manage your Minecraft server with an intuitive and powerful server management experience.
+          </p>
+
+          <ul class="panel-list reveal" style="--d:.15s">
+            <li><svg aria-hidden="true"><use href="#i-check" /></svg> Live console with full command input</li>
+            <li><svg aria-hidden="true"><use href="#i-check" /></svg> One-click start, stop and restart</li>
+            <li><svg aria-hidden="true"><use href="#i-check" /></svg> File manager, SFTP and database tools</li>
+            <li><svg aria-hidden="true"><use href="#i-check" /></svg> Resource graphs for CPU, RAM and disk</li>
+          </ul>
+
+          <a class="btn btn-outline reveal" style="--d:.2s" href="https://discord.gg/QuMcykHhRR" data-discord>
+            <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg>
+            Ask about the panel
+          </a>
+        </div>
+
+        <!-- Visual mockup only — not a live integration -->
+        <div class="ptero reveal" style="--d:.1s" role="img" aria-label="Preview of the MineAura server control panel showing console output, resource usage and power controls">
+          <div class="ptero-chrome">
+            <span class="dot dot-red"></span><span class="dot dot-amber"></span><span class="dot dot-cyan"></span>
+            <span class="ptero-url">panel.mineaura.gg / server / aura-smp</span>
+          </div>
+
+          <div class="ptero-body">
+            <aside class="ptero-side">
+              <div class="ptero-brand">
+                <span class="ptero-logo" aria-hidden="true"></span>
+                <div>
+                  <strong>Aura SMP</strong>
+                  <small><span class="status-dot"></span> Running</small>
+                </div>
+              </div>
+              <nav class="ptero-nav" aria-hidden="true">
+                <span class="is-active"><svg><use href="#i-panel" /></svg> Console</span>
+                <span><svg><use href="#i-folder" /></svg> File Manager</span>
+                <span><svg><use href="#i-archive" /></svg> Backups</span>
+                <span><svg><use href="#i-activity" /></svg> Monitoring</span>
+                <span><svg><use href="#i-sliders" /></svg> Startup</span>
+                <span><svg><use href="#i-users" /></svg> Users</span>
+              </nav>
+            </aside>
+
+            <div class="ptero-main">
+              <div class="ptero-top">
+                <div class="ptero-res">
+                  <div class="res">
+                    <div class="res-head"><span>CPU</span><b>42%</b></div>
+                    <div class="bar"><i style="--v:42%"></i></div>
+                  </div>
+                  <div class="res">
+                    <div class="res-head"><span>RAM</span><b>3.2 / 8 GB</b></div>
+                    <div class="bar"><i style="--v:40%"></i></div>
+                  </div>
+                  <div class="res">
+                    <div class="res-head"><span>Disk</span><b>12.4 / 80 GB</b></div>
+                    <div class="bar"><i style="--v:15%"></i></div>
+                  </div>
+                </div>
+                <div class="ptero-power" aria-hidden="true">
+                  <span class="power power-start">Start</span>
+                  <span class="power power-restart">Restart</span>
+                  <span class="power power-stop">Stop</span>
+                </div>
+              </div>
+
+              <div class="ptero-console" aria-hidden="true">
+                <div class="console-line"><span class="ts">[12:04:01]</span><span class="tag tag-info">INFO</span><span>Starting minecraft server version 1.21.x</span></div>
+                <div class="console-line"><span class="ts">[12:04:02]</span><span class="tag tag-info">INFO</span><span>Loading properties and plugin configuration</span></div>
+                <div class="console-line"><span class="ts">[12:04:05]</span><span class="tag tag-ok">DONE</span><span>Preparing level "world"</span></div>
+                <div class="console-line"><span class="ts">[12:04:09]</span><span class="tag tag-purple">PANEL</span><span>Automated backup completed — 2.1 GB</span></div>
+                <div class="console-line"><span class="ts">[12:04:11]</span><span class="tag tag-info">INFO</span><span>Done (7.812s)! For help, type "help"</span></div>
+                <div class="console-line"><span class="ts">[12:05:22]</span><span class="tag tag-pink">EVENT</span><span>Player joined the game</span></div>
+                <div class="console-line"><span class="ts">[12:05:24]</span><span class="tag tag-info">INFO</span><span>Loading 14 plugins (EssentialsX, LuckPerms, Vault)</span></div>
+                <div class="console-line"><span class="ts">[12:06:03]</span><span class="tag tag-purple">PANEL</span><span>Scheduled restart queued for 04:00</span></div>
+                <div class="console-line"><span class="ts">[12:06:47]</span><span class="tag tag-info">INFO</span><span>Saving chunks for level 'world'/minecraft:overworld</span></div>
+                <div class="console-line console-input"><span class="caret">&gt;</span><span>say Welcome to Aura SMP</span><i class="blink"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       WHY MINEAURA
+       ==================================================================== -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow reveal">Why MineAura</span>
+        <h2 class="section-title reveal" style="--d:.05s">BUILT FOR YOUR NEXT <span class="grad-text">ADVENTURE.</span></h2>
+        <p class="section-lede reveal" style="--d:.1s">
+          Hosting should disappear into the background. We handle the infrastructure,
+          the panel and the protection — you handle the world.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <article class="why-card reveal">
+          <span class="why-num">01</span>
+          <h3>Easy server management</h3>
+          <p>Launch, configure and maintain your server from one clean panel — no command-line setup required.</p>
+        </article>
+        <article class="why-card reveal" style="--d:.05s">
+          <span class="why-num">02</span>
+          <h3>Flexible hosting packages</h3>
+          <p>Start small and scale when your player count grows. Move up a tier without rebuilding your world.</p>
+        </article>
+        <article class="why-card reveal" style="--d:.1s">
+          <span class="why-num">03</span>
+          <h3>Gaming-focused infrastructure</h3>
+          <p>Hardware and networking chosen for tick stability, low latency and Minecraft's very specific workload.</p>
+        </article>
+        <article class="why-card reveal">
+          <span class="why-num">04</span>
+          <h3>Community-driven support</h3>
+          <p>A real Discord community and a team that answers — not a ticket queue that goes quiet.</p>
+        </article>
+        <article class="why-card reveal" style="--d:.05s">
+          <span class="why-num">05</span>
+          <h3>Multiple hosting options</h3>
+          <p>Minecraft hosting and full VPS plans under one brand, so your network can grow in one place.</p>
+        </article>
+        <article class="why-card reveal" style="--d:.1s">
+          <span class="why-num">06</span>
+          <h3>Modern control panel</h3>
+          <p>Pterodactyl-based, mobile friendly and fast — with files, backups, schedules and monitoring built in.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       LOCATIONS
+       ==================================================================== -->
+  <section class="section locations-section" id="locations">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal">Network</span>
+        <h2 class="section-title reveal" style="--d:.05s">SERVER <span class="grad-text">LOCATIONS</span></h2>
+        <p class="section-lede reveal" style="--d:.1s">
+          Choose a region close to your players. Region availability and live latency
+          are confirmed by the team in Discord before your order is finalised.
+        </p>
+      </div>
+
+      <div class="location-grid" id="locationGrid"></div>
+
+      <p class="plans-footnote reveal">
+        Locations shown are placeholders pending final confirmation of MineAura's live regions.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       SUPPORT / FAQ
+       ==================================================================== -->
+  <section class="section faq-section" id="support">
+    <div class="faq-aura" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow reveal">Support</span>
+        <h2 class="section-title reveal" style="--d:.05s">QUESTIONS, <span class="grad-text">ANSWERED</span></h2>
+        <p class="section-lede reveal" style="--d:.1s">
+          Everything you need to know before you open a ticket — or just ask us directly in Discord.
+        </p>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <div class="faq-item reveal">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">
+            <span>How can I purchase a server?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <div class="faq-a-inner">
+              <p>Every order is handled personally through our Discord. Join the server, open the sales channel and tell the team which package fits your world — they will confirm the details and get your server provisioned. There is no checkout on this website.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="--d:.04s">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">
+            <span>How quickly will my server be deployed?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <div class="faq-a-inner">
+              <p>Deployment is automated once your order is confirmed in Discord. Your panel login and server address are sent as soon as provisioning finishes — you can be in your world the same day.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="--d:.08s">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">
+            <span>Do you support Paper and Spigot?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <div class="faq-a-inner">
+              <p>Yes. Paper and Spigot are selectable from the control panel, along with other popular server software. You can install plugins and change versions yourself without touching a terminal.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="--d:.12s">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">
+            <span>Can I use Forge and Fabric?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <div class="faq-a-inner">
+              <p>Forge and Fabric are both supported, so modded survival worlds, custom tech packs and everything in between will run on a MineAura server.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="--d:.16s">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">
+            <span>Do you support modpacks?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <div class="faq-a-inner">
+              <p>Yes. Popular modpacks can be installed through the panel, and you can upload a custom pack with the file manager or over FTP. If you are unsure which tier a heavy pack needs, ask in Discord before ordering.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="--d:.2s">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q6" aria-controls="faq-a6">
+            <span>Can I upload custom plugins?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6">
+            <div class="faq-a-inner">
+              <p>Absolutely. Upload your own plugins through the file manager or FTP and restart your server when you are ready. Your files, your rules.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="--d:.24s">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q7" aria-controls="faq-a7">
+            <span>How do I contact support?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a7" role="region" aria-labelledby="faq-q7">
+            <div class="faq-a-inner">
+              <p>Support lives in our Discord. Open a ticket in the support channel and the team will pick it up — the same place you order, upgrade and ask pre-sales questions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" style="--d:.28s">
+          <button class="faq-q" type="button" aria-expanded="false" id="faq-q8" aria-controls="faq-a8">
+            <span>Do you provide VPS hosting?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a" id="faq-a8" role="region" aria-labelledby="faq-q8">
+            <div class="faq-a-inner">
+              <p>Yes. Alongside Minecraft plans we offer Aura VPS packages with root access — ideal for proxy networks, multiple game servers or development workloads. Ask in Discord for current VPS availability.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Support CTA -->
+      <div class="support-card reveal">
+        <div class="support-copy">
+          <h3>Still deciding? Ask us first.</h3>
+          <p>Sales, upgrades and technical help all happen in one place. Tell us about your world and we will point you at the right package.</p>
+        </div>
+        <div class="support-actions">
+          <a class="btn btn-primary btn-lg" href="https://discord.gg/QuMcykHhRR" data-discord>
+            <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg>
+            Join the Discord
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#budget">Compare plans</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FINAL CTA
+       ==================================================================== -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-inner">
+          <span class="eyebrow">Ready when you are</span>
+          <h2 class="cta-title">LET'S BUILD YOUR <span class="grad-text">WORLD</span></h2>
+          <p>Pick a package, hop into Discord, and your server is on its way. Premium hardware, full control, real support.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-lg" href="https://discord.gg/QuMcykHhRR" data-discord>
+              <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg>
+              Order in Discord
+            </a>
+            <a class="btn btn-outline btn-lg" href="#vps-hosting">Explore VPS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================================================================
+     FOOTER
+     ====================================================================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#home" aria-label="MineAura Hosting — home">
+        <span class="brand-mark">
+          <img src="assets/img/favicon.png" alt="MineAura logo" width="40" height="40" data-asset="mark" />
+        </span>
+        <span class="brand-word-wrap">
+          <img class="brand-word" src="assets/img/minecraft_title.png" alt="MineAura Hosting" width="200" height="32" data-asset="wordmark" data-fallback-text="MINEAURA" />
+        </span>
+      </a>
+      <p>Powering your worlds with premium hosting and reliable infrastructure.</p>
+      <a class="btn btn-ghost footer-discord" href="https://discord.gg/QuMcykHhRR" data-discord>
+        <svg class="ico" aria-hidden="true"><use href="#i-discord" /></svg>
+        Join our Discord
+      </a>
+    </div>
+
+    <nav class="footer-col" aria-label="Footer navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#minecraft-hosting">Minecraft Hosting</a></li>
+        <li><a href="#vps-hosting">VPS Hosting</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#support">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Community">
+      <h3>Community</h3>
+      <ul>
+        <li><a href="https://discord.gg/QuMcykHhRR" data-discord>Discord</a></li>
+        <li><a href="https://discord.gg/QuMcykHhRR" data-discord>Sales &amp; orders</a></li>
+        <li><a href="https://discord.gg/QuMcykHhRR" data-discord>Support tickets</a></li>
+        <li><a href="#locations">Server locations</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 MineAura Hosting. All Rights Reserved.</p>
+    <p class="footer-legal">MineAura Hosting is not affiliated with Mojang Studios or Microsoft.</p>
+  </div>
+</footer>
+
+<script src="assets/js/config.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
